@@ -8,24 +8,7 @@ from django.views.generic import (
     CreateView,
     UpdateView,
     DeleteView
-)#class based views
-
-
-'''posts = [
-    {
-        'author': 'Yagnesh',
-        'title': 'Blog Post 1',
-        'content': 'First post content',
-        'date_posted': 'August 27, 2018'
-    },
-    {
-        'author': 'Yagnesh1',
-        'title': 'Blog Post 2',
-        'content': 'Second post content',
-        'date_posted': 'August 28, 2018'
-    }
-]'''
-
+)
 
 def home(request):
     context = {
@@ -111,11 +94,10 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return False
 
 
-#testuser1
-#test@123
+
 
 '''
---shell mai
+--shell
 import json
 from blogs.model import Post
 with open('posts.json') as f:
@@ -126,6 +108,4 @@ for post in posts_json:
     post.save()
 
 exit
-
-Yagneshadmin  yagneshblog
 '''
