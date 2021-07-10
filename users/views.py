@@ -40,9 +40,3 @@ def profile(request):
     }
 
     return render(request, 'users/profile.html', context)
-
-'''
-newuser123 new@gmail.com boringpass  -> iska profile gayab
-nuser3 tesrauser
-nuesr5 fifthuser5
-'''
